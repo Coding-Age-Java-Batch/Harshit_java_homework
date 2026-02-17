@@ -1,0 +1,26 @@
+import java.util.*;
+public class SubListExample {
+public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        System.out.print("Enter size: ");
+        int n = sc.nextInt();
+
+        System.out.println("Enter elements: ");
+        for(int i = 0; i<n; i++){
+            list.add(sc.nextInt());
+        }
+
+        System.out.print("Start Index: ");
+        int start = sc.nextInt();
+
+        System.out.print("End Index: ");
+        int end = sc.nextInt();
+
+        ArrayList<Integer> sub = new ArrayList<>(list.subList(start,end));
+        System.out.println("Sublist: "+sub);
+    }
+}
